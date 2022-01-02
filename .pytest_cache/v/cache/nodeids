@@ -1,3 +1,4 @@
 [
-  "testcases/get_test_test.py::TestCaseGetTest::test_start"
+  "testcases/get_test_test.py::TestCaseGetTest::test_start",
+  "testcases/login_test.py::TestCaseLogin::test_start"
 ]

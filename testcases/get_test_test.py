@@ -7,12 +7,12 @@ from httprunner import HttpRunner, Config, Step, RunRequest, RunTestCase
 
 class TestCaseGetTest(HttpRunner):
 
-    config = Config("qq号测试凶吉")
+    config = Config("qq号测试凶吉").base_url("http://japi.juhe.cn")
 
     teststeps = [
         Step(
             RunRequest("测试凶吉")
-            .get("http://japi.juhe.cn/qqevaluate/qq")
+            .get("/qqevaluate/qq")
             .with_params(**{"key": "f21ae3db6c8e4bc0f7e8411a86f404ea", "qq": 123123123})
             .validate()
             .assert_equal("body.error_code", 0)
