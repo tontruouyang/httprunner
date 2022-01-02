@@ -1,0 +1,49 @@
+2021-12-31 21:06:57.763 | INFO     | httprunner.runner:test_start:450 - Start to run testcase: qqºÅ²âÊÔĞ×¼ª, TestCase ID: c898ad2b-54b5-4c8d-aa43-123f8b75cea9
+2021-12-31 21:06:57.773 | INFO     | httprunner.runner:__run_step:292 - run step begin: ²âÊÔĞ×¼ª >>>>>>
+2021-12-31 21:06:58.010 | DEBUG    | httprunner.client:request:186 - client IP: 192.168.0.170, Port: 56153
+2021-12-31 21:06:58.013 | DEBUG    | httprunner.client:request:194 - server IP: 203.107.54.210, Port: 80
+2021-12-31 21:06:58.015 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://japi.juhe.cn/qqevaluate/qq?key=f21ae3db6c8e4bc0f7e8411a86f404ea&qq=123123123
+headers  : {
+    "User-Agent": "python-requests/2.24.0",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "HRUN-Request-ID": "HRUN-c898ad2b-54b5-4c8d-aa43-123f8b75cea9-017774"
+}
+cookies  : {}
+body     : None
+
+2021-12-31 21:06:58.016 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Fri, 31 Dec 2021 13:06:58 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Set-Cookie": "aliyungf_tc=cd20dbf7f64cede51fdb221de6891e98f2398728c937ab50c7adfb2a897b293e; Path=/; HttpOnly"
+}
+cookies  : {
+    "aliyungf_tc": "cd20dbf7f64cede51fdb221de6891e98f2398728c937ab50c7adfb2a897b293e"
+}
+encoding : None
+content_type : application/json
+body     : {
+    "error_code": 0,
+    "reason": "success",
+    "result": {
+        "data": {
+            "conclusion": "\u6839\u6df1\u8482\u56fa\uff0c\u84b8\u84b8\u65e5\u4e0a\uff0c\u5982\u610f\u5409\u7965\uff0c\u767e\u4e8b\u987a\u9042",
+            "analysis": "\u4e3b\u4eba\u6027\u683c\u7c7b\u578b\uff1a[\u70ed\u60c5/\u5584\u53d8\u68a6\u60f3\u5bb6\u578b]\uff0c\u5176\u5177\u4f53\u8868\u73b0\u4e3a\uff1a\u5bf9\u4eba\u70ed\u60c5\u65e0\u906e\u63a9\uff0c\u65f6\u5e38\u68a6\u60f3\u53ef\u4ee5\u8c08\u4e00\u573a\u620f\u5267\u6027\u604b\u7231\uff0c\u4eb2\u8eab\u4f53\u4f1a\u4e2a\u4e2d\u60b2\u6b22\u79bb\u5408\u7684\u52a8\u4eba\u7ecf\u5386\uff0c\u662f\u4e2a\u5927\u68a6\u60f3\u5bb6\u3002\u4f46\u5bf9\u4e8e\u611f\u60c5\u5374\u6613\u53d8\u5366\u3002"
+        }
+    }
+}
+
+2021-12-31 21:06:58.018 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 236.42 ms, response_length: 0 bytes
+2021-12-31 21:06:58.019 | INFO     | httprunner.response:validate:246 - assert body.error_code equal 0(int)	==> pass
+2021-12-31 21:06:58.020 | INFO     | httprunner.response:validate:246 - assert status_code equal 200(int)	==> pass
+2021-12-31 21:06:58.021 | INFO     | httprunner.runner:__run_step:304 - run step end: ²âÊÔĞ×¼ª <<<<<<
+
