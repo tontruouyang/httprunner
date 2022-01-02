@@ -3,13 +3,13 @@
 config:
 
     name: qq号测试凶吉
-
+    base_url: http://japi.juhe.cn
 teststeps:
 -
     name: 测试凶吉
 
     request:
-        url: http://japi.juhe.cn/qqevaluate/qq
+        url: /qqevaluate/qq
         method: GET
         params:
             key: "f21ae3db6c8e4bc0f7e8411a86f404ea"
