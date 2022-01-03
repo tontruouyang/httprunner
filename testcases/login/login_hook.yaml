@@ -1,0 +1,40 @@
+config:
+    name: login
+    base_url: ${ENV(url)}
+    variables:
+        name: ${ENV(USERNAME)}
+        pas: ${ENV(PASSWORD)}
+        device: ${ENV(device_type)}
+teststeps:
+-
+    name: 登录接口
+    request:
+        method: POST
+        url: /index.php/login/submit
+        json:
+          username: $name
+          password: $pas
+          device_type: "$device"
+    extract:
+        token: body.data.token
+    validate:
+        - eq: [body.code, 1000]
+        - eq: [status_code, 200]
+
+-
+    name: 查询积分接口
+    request:
+        method: POST
+        url: /index.php/activity/integralLog
+        json:
+            device_type: "$device"
+            page: 1
+            limit: 1
+            Authorization: $token
+    setup_hook:
+        - ${setup_hook}
+    teardown_hook:
+        - ${teardown_hook}
+    validate:
+        - eq: [ body.code, 1000 ]
+        - eq: [ status_code, 200 ]

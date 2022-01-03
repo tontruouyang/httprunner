@@ -1,4 +1,17 @@
 [
   "testcases/get_test_test.py::TestCaseGetTest::test_start",
-  "testcases/login_test.py::TestCaseLogin::test_start"
+  "testcases/login_test.py::TestCaseLogin::test_start",
+  "testcases/login/login_testcase_test.py::TestCaseLoginTestcase::test_start",
+  "testcases/login/activity_integralLog_test.py::TestCaseActivityIntegrallog::test_start",
+  "testcases/login/login_testcase_test.py::TestCaseLoginTestcase::test_start[param0]",
+  "testcases/login/login_testcase_test.py::TestCaseLoginTestcase::test_start[param1]",
+  "testcases/login/login_testcase_test.py::TestCaseLoginTestcase::test_start[param2]",
+  "testcases/login/login_testcase_test.py::TestCaseLoginTestcase::test_start[param3]",
+  "testcases/login/login_testcase_test.py::TestCaseLoginTestcase::test_start[param4]",
+  "testcases/login/login_testcase_test.py::TestCaseLoginTestcase::test_start[param5]",
+  "testcases/login/login_testcase_test.py::TestCaseLoginTestcase::test_start[param6]",
+  "testcases/login/login_testcase_test.py::TestCaseLoginTestcase::test_start[param7]",
+  "testcases/login/login_testcase_test.py::TestCaseLoginTestcase::test_start[param8]",
+  "testcases/login/login_test.py::TestCaseLogin::test_start",
+  "testcases/login/login_hook_test.py::TestCaseLoginHook::test_start"
 ]

@@ -1,0 +1,23 @@
+config:
+      name: 查询积分明细
+      base_url: ${ENV(url)}
+      variables:
+            device: ${ENV(device_type)}
+teststeps:
+-
+      name: 登录
+      testcase: testcases/login/login_testcase.yaml
+
+-
+      name: 查询
+      request:
+            method: POST
+            url: /index.php/activity/integralLog
+            json:
+                  device_type: "$device"
+                  page: 1
+                  limit: 1
+                  Authorization: $token
+      validate:
+            - eq: [body.code, 1000 ]
+            - eq: [status_code, 200]
